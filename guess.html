@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <script src="lib/angular/angular.js"></script>
+        <script src="guess.js"></script>
+    </head>
+    <body ng-controller="ControllerController">
+        <label for="">请输入一个数字</label>
+        <input type="number" ng-model="dep.Guess.inputNumber">{{ dep.Guess.inputNumber }}
+        <button type="button" ng-click="dep.Guess.verify()">Verify</button>
+        <button type="button" ng-click="dep.Guess.reset()">Reset</button>
+        <br>
+        已猜{{ dep.Guess.count }}次
+        <br>
+        {{ dep.Guess.compare }}
+    </body>
+</html>
