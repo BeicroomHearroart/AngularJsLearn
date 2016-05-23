@@ -14,3 +14,5 @@
        * 哈哈
        * 呵呵
        * 嘻嘻
+
+<pre><code>git commit -m "This is commit"</code></pre>
