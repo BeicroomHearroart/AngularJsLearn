@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="testAnimation">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/testAnimation.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <script src="../lib/angular/angular.min.js"></script>
+    <script src="../lib/angular/angular-animate.min.js"></script>
+    <script src="../lib/angular/angular-ui-router.min.js"></script>
+    <script src="../lib/jQuery/jquery-2.2.4.min.js"></script>
+    <script src="js/testAnimation.module.js"></script>
+    <script src="js/testAnimation.route.js"></script>
+    <script src="js/testAnimation.animate.js"></script>
+    <script src="js/testAnimation.directive.js"></script>
+</head>
+<body>
+    <!--<td-menu class="tdMenu"></td-menu>-->
+    <!--<hr />-->
+    <a href="" ui-sref="home">Page1</a>
+    <a href="" ui-sref="test">Page2</a>
+
+    <div class="home" ui-view></div>
+</body>
+</html>
