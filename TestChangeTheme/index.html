@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="changeTheme">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="script/config.js"></script>
+    <script src="script/change.js"></script>
+
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/default.css">
+</head>
+<body ng-controller="changeThemeController">
+    <div>
+        <select ng-model="selectedTheme" ng-options="theme.name for theme in Themes" ng-change="changeTheme()">
+
+        </select>
+        {{ selectedTheme.name || "default" }}
+    </div>
+    <div>
+
+    </div>
+</body>
+</html>
